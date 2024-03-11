@@ -1,0 +1,144 @@
+/* style.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(145deg, #232323, #191919);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Adjust your existing CSS or add this */
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: #cccccc; /* Slightly lighter grey on hover/focus for visibility */
+    text-decoration: underline; /* Optional: Adds underline on hover/focus */
+}
+
+
+.logo-container img {
+    height: 50px; 
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(145deg, #232323, #191919);
+    color: #ffffff;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
+}
+
+
+/* Add to your style.css */
+
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjusts the space between each game rectangle */
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px; /* Adjust based on your preference */
+    padding: 20px;
+    background-color: #1f1f1f; /* Dark background for the game rectangle */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Drop shadow */
+    transition: transform 0.3s ease;
+}
+
+.game:hover {
+    transform: translateY(-5px); /* Slight raise effect on hover */
+}
+
+.game img {
+    width: 100px; /* Adjust based on your preference */
+    height: auto;
+    margin-bottom: 10px; /* Space between the icon and the game title */
+}
+
+/* Add to your style.css */
+
+.game p {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Specifies the new font family */
+    font-weight: 700; /* Ensures the text is bold */
+}
+
+    .game-iframe-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%; /* Full height of the container */
+        padding: 20px;
+    }
+
+    iframe#gameIframe {
+        width: 640px; /* Adjust the width as needed */
+        height: 480px; /* Adjust the height as needed */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Drop shadow for depth */
+        border: none; /* Remove default border */
+        margin-bottom: 20px; /* Space between the iframe and the fullscreen button */
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff; /* Modern blue */
+        color: white;
+        cursor: pointer;
+        outline: none;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    button:hover, button:focus {
+        background-color: #0056b3; /* Darker shade of blue on hover/focus */
+        transform: scale(1.05); /* Slight increase in size for interactivity */
+    }
+
